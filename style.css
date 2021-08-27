@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Open sans";
+  src: url(./OpenSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+body {
+  font-family: "Open sans", sans-serif;
+}
+header {
+  height: 200px;
+}
+header img {
+  width: 100px;
+  display: block;
+  margin: 25px 350px;
+}
+header h1 {
+  font-size: 28px;
+  margin-left: 350px;
+  margin-top: -5px;
+}
+header p {
+  font-size: 12px;
+  width: 350px;
+  margin-left: 350px;
+  color: #212121;
+  margin-top: 5px;
+}
+/* navbar */
+nav {
+  width: 100%;
+}
+nav ul {
+  border-radius: 2px;
+  list-style: none;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2px;
+}
+nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  background-color: #00a2ea;
+  display: block;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+nav ul li a:hover {
+  color: black;
+}
+/* .sticky {
+  background-color: white;
+  position: fixed;
+  top: 0;
+} */
+/* akhir navbar */
+/* content */
+.content {
+  height: 2000px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.content .kiri {
+  background-color: #fff;
+}
+.content .kiri .kepsek {
+  width: 330px;
+  background-color: #f0851b;
+  border-radius: 2px;
+}
+
+.content .kiri .kepsek .img-kepsek,
+.content .kiri .profil img {
+  width: 300px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+  border-radius: 2px;
+}
+.content .kiri .text {
+  width: 170px;
+  margin: auto;
+  padding: 15px 0;
+}
+.content .kiri .kepsek .text p,
+.content .kiri .profil .text p {
+  border-radius: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+.content .kiri .profil {
+  width: 330px;
+  border-radius: 2px;
+  margin-top: 25px;
+  background-color: #fec905;
+}
+.info-pendaftaran {
+  cursor: pointer;
+  margin-top: 25px;
+  height: 100px;
+  width: 330px;
+  border: 1px solid #616161;
+  display: grid;
+  grid-template-columns: 100px 230px;
+}
+.info-pendaftaran img {
+  background-color: #eee;
+  width: 50px;
+  height: 50px;
+  margin: 10px 15px;
+  padding: 15px;
+}
+.info-pendaftaran .text h2 {
+  color: #212121;
+  font-size: 18px;
+  margin-left: -10px;
+  width: 230px;
+  margin-top: -5px;
+}
+.info-pendaftaran .text p {
+  font-size: 14px;
+  margin-left: -10px;
+  width: 230px;
+  margin-top: 5px;
+  color: #212121;
+}
+/* content kanan */
+.content .kanan {
+  background-color: #fff;
+}
+.kanan .pengumuman1 {
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #666666;
+  margin-bottom: 25px;
+}
+.kanan .pengumuman1 h1 {
+  color: white;
+  padding-top: 10px;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+}
+.kanan .pengumuman2 {
+  cursor: pointer;
+  height: 150px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #666666;
+}
+.kanan .pengumuman2 h2 {
+  margin-left: 25px;
+  padding-top: 15px;
+  color: white;
+  font-size: 22px;
+}
+.kanan .pengumuman2 p {
+  margin: 10px 25px;
+  font-size: 16px;
+  width: 90%;
+  color: white;
+}
+.profil-sekolah {
+  margin-top: 35px;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  padding-bottom: 25px;
+}
+.profil-sekolah .h4 {
+  height: 50px;
+  border-bottom: 1px solid #6666;
+  line-height: 50px;
+  color: #565656;
+}
+.profil-sekolah .h4 h4 {
+  font-size: 20px;
+  margin-left: 50px;
+}
+.profil-sekolah .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.profil-sekolah .grid img {
+  width: 250px;
+  margin: 25px;
+}
+
+.profil-sekolah .grid .text h5 {
+  margin: 15px 0;
+  color: #00a2ea;
+  font-size: 18px;
+}
+.profil-sekolah .grid .text p {
+  color: #313131;
+  font-size: 16px;
+}
+.profil-sekolah a {
+  text-align: center;
+  display: block;
+  margin: auto;
+
+  width: 200px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #00a2ea;
+}
+.berita {
+  cursor: pointer;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.berita1 {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  background-color: #e3e3e3;
+}
+.berita1 p {
+  font-size: 16px;
+  padding: 25px;
+}
